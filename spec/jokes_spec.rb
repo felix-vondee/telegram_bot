@@ -14,8 +14,10 @@ describe Joke do
   end
 
   it 'should return a joke that contains the name given' do
-    name = 'jordan'
+    name = 'Miley'
     res = joke.display_joke(name)
     expect((res.include? name)).to be true
   end
+
+  #test starting from line 16 does not necessarily have a negative version
 end
