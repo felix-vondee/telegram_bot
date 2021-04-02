@@ -1,4 +1,3 @@
-
 require_relative '../lib/quotes'
 
 describe Quote do

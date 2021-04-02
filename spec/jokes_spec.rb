@@ -1,4 +1,3 @@
-
 require_relative '../lib/jokes'
 
 describe Joke do
@@ -19,5 +18,5 @@ describe Joke do
     expect((res.include? name)).to be true
   end
 
-  #test starting from line 16 does not necessarily have a negative version
+  # test starting from line 16 does not necessarily have a negative version
 end

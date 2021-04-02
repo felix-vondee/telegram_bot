@@ -4,6 +4,8 @@ require 'httparty'
 require_relative '../lib/jokes'
 require_relative '../lib/quotes'
 
+# rubocop: disable Metrics/CyclomaticComplexity,Metrics/MethodLength,Style/GlobalVars,Metrics/AbcSize
+
 token = ENV['TELEGRAM_API']
 $joke_request = nil
 def bot_commands(bot, message)
@@ -50,3 +52,5 @@ Telegram::Bot::Client.run(token) do |bot|
     bot_commands(bot, message)
   end
 end
+
+# rubocop: enable Metrics/CyclomaticComplexity,Metrics/MethodLength,Style/GlobalVars,Metrics/AbcSize

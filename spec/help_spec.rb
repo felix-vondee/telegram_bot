@@ -1,4 +1,3 @@
-
 require_relative '../lib/help'
 
 describe Request do
