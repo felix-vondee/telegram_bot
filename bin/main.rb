@@ -33,16 +33,6 @@ def bot_commands(bot, message)
   when '/joke'
     $joke_request = true
     bot.api.send_message(chat_id: message.chat.id, text: 'What is your name?')
-  else
-    if $joke_request
-      name = message.text
-      joke = Joke.new.display_joke(name)
-      $joke_request = false
-      bot.api.send_message(chat_id: message.chat.id, text: joke)
-    else
-      bot.api.send_message(chat_id: message.chat.id, text: 'I do not recognize that command')
-    end
-  end
 end
 
 Telegram::Bot::Client.run(token) do |bot|
