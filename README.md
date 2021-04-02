@@ -47,7 +47,7 @@
 - Telegram Bot API
 - Type fit Quotes API
 - Chuck Norris Jokes API
-- Type Fit Quotes API
+
 
 ### Requirements
 - A desktop or laptop computer
