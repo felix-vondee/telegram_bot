@@ -2,7 +2,7 @@
 
 ![screenshot](assets/demo.png)
 
-> In this project I built a telegram bot that can be run from the command line. It is a relatively simple bot that displays text messages based on the commands entered by the user.
+> In this project, I built a telegram bot that can be initialized from the command line. It is a relatively simple bot that displays text messages based on the commands entered by the user.
 
 ## What this bot does
 
@@ -63,7 +63,7 @@
 - Create a new bot with the help of [BotFather](https://t.me/botfather)
 - Obtain your new bot's token.
 - Create .env file in the root directory.
-- Insert the folowing snipped inside your .env file: TELEGRAM_API = 'Paste your ChatBot API Here'
+- Insert the folowing snippet inside your .env file: TELEGRAM_API = 'Paste your ChatBot API Here'
 
   ![.env file](assets/envfile.png)
 
@@ -72,7 +72,7 @@
 
 - On your telegram account search for your bot's name
 
-- Then use the commands above to begin interacting.
+- Then use the commands above to begin interacting with the bot
 
 ## Dependencies
 
@@ -83,11 +83,11 @@
 
 ## Testing
 
-Install Rspec gem in your system.
+- Install Rspec on your system
 
-Open Command Prompt or Terminal and run: ```gem install Rspec```
+- Open Command Prompt or Terminal and run: ```gem install Rspec```
 
-Navigate into the project folder and run the following command in the console: ```rspec```
+- Navigate into the project folder and run the following command in the console: ```rspec```
 
 
 ## Contributor
