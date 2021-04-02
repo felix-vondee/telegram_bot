@@ -27,10 +27,10 @@ def bot_commands(bot, message)
     bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")
   when '/bye'
     bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
-  when '/quote'
+  when '/rdm_quote'
     quote = Quote.new.display_quote
     bot.api.send_message(chat_id: message.chat.id, text: "#{quote['text']} \n By: #{quote['author']}")
-  when '/joke'
+  when '/rdm_joke'
     $joke_request = true
     bot.api.send_message(chat_id: message.chat.id, text: 'What is your name?')
   else
@@ -40,7 +40,7 @@ def bot_commands(bot, message)
       $joke_request = false
       bot.api.send_message(chat_id: message.chat.id, text: joke)
     else
-      bot.api.send_message(chat_id: message.chat.id, text: 'I do not recognize that command')
+      bot.api.send_message(chat_id: message.chat.id, text: 'This command is not valid, please try again')
     end
   end
 end
