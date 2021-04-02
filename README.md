@@ -94,9 +94,9 @@ Navigate into the project folder and run the following command in the console: `
 
 👤 **Felix Vondee**
 
-- Github: [@OlawaleJoseph](https://github.com/felix-vondee)
-- Twitter: [@javanode123](https://twitter.com/felix_vondee)
-- Linkedin: [olawale-adedeko](https://www.linkedin.com/in/felix-vondee-b8a280202/)
+- Github: [@felix-vondee](https://github.com/felix-vondee)
+- Twitter: [@felix_vondee](https://twitter.com/felix_vondee)
+- Linkedin: [Felix Vondee](https://www.linkedin.com/in/felix-vondee-b8a280202/)
 
 ## 🤝 Interested in contributing ?
 
