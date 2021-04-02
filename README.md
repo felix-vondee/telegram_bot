@@ -63,7 +63,7 @@
 - Create a new bot with the help of [BotFather](https://t.me/botfather)
 - Obtain your new bot's token.
 - Create .env file in the root directory.
-- Insert the folowing snippet inside your .env file: TELEGRAM_API = 'Paste your ChatBot API Here'
+- Insert the folowing snippet inside your .env file: ```TELEGRAM_API = Paste your ChatBot API Here```
 
   ![.env file](assets/envfile.png)
 
