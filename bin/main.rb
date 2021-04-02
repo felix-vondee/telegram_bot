@@ -12,18 +12,18 @@ def bot_commands(bot, message)
     greet = "Hi #{message.from.first_name}, I am a chatbot. My name is felix379
     \n Commands:
     \n /init: Welcomes the user.
-    \n /commands: Displays the list of commands.
-    \n /hiya: The bot says 'Hello, {Your Name}'.
-    \n /Ola: The bot says 'Hi, {Your Name}'.
+    \n /help: Displays the list of commands.
+    \n /how_ya: The bot says 'I am great, what about you {Your Name}'.
+    \n /hey: The bot says 'Hello, {Your Name}'.
     \n /rdm_quote: Shows a random quote.
     \n /rdm_joke: Asks for your name and creates a random joke with it.
     \n /bye: Says goodbye "
     bot.api.send_message(chat_id: message.chat.id, text: "Hello and welcome. #{greet}")
-  when '/start'
+  when '/init'
     bot.api.send_message(chat_id: message.chat.id, text: "Hello and welcome #{message.from.first_name}")
-  when '/hiya'
-    bot.api.send_message(chat_id: message.chat.id, text: "Hiya, #{message.from.first_name}")
-  when '/Ola'
+  when '/how_ya'
+    bot.api.send_message(chat_id: message.chat.id, text: "I am great, what about you #{message.from.first_name}")
+  when '/hey'
     bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")
   when '/bye'
     bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
