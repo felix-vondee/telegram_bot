@@ -9,22 +9,22 @@ $joke_request = nil
 def bot_commands(bot, message)
   case message.text
   when '/help'
-    greet = "Hi, #{message.from.first_name} I am a chatbot and my name is FELIX
+    greet = "Hi #{message.from.first_name}, I am a chatbot. My name is felix379
     \n Commands:
     \n /start: Greets the user.
-    \n /help: Displays the list of acceptable commands.
-    \n /hi: The bot says hello.
-    \n /hello: The bot says hi.
+    \n /help: Displays the list of commands.
+    \n /hi: The bot says hiya.
+    \n /hello: The bot says Ola.
     \n /quote: Displays quote.
-    \n /joke: Asks for your name and cretes a joke with it.
+    \n /joke: Asks for your name and creates a joke with it.
     \n /bye: Says goodbye "
-    bot.api.send_message(chat_id: message.chat.id, text: "Hello, wlecome to telebot #{greet}")
+    bot.api.send_message(chat_id: message.chat.id, text: "Hello and welcome. #{greet}")
   when '/start'
-    bot.api.send_message(chat_id: message.chat.id, text: "Hello, wlecome to telebot #{message.from.first_name}")
+    bot.api.send_message(chat_id: message.chat.id, text: "Hello and welcome #{message.from.first_name}")
   when '/hi'
-    bot.api.send_message(chat_id: message.chat.id, text: 'Hello')
+    bot.api.send_message(chat_id: message.chat.id, text: 'Hiya')
   when '/hello'
-    bot.api.send_message(chat_id: message.chat.id, text: 'Hi')
+    bot.api.send_message(chat_id: message.chat.id, text: 'Ola')
   when '/bye'
     bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
   when '/quote'
